@@ -1,12 +1,55 @@
-# React + Vite
+````markdown
+# Referral Program Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## Setup Instructions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
+- Node.js (v20+ recommended)
+- npm package manager
 
-## Expanding the ESLint configuration
+### Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository and navigate to the frontend folder:
+   ```bash
+   git clone https://github.com/iam-dev-deva/referral-program-frontend.git
+   cd referral-program-frontend
+````
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and go to:
+
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## Known Issues / Limitations
+
+* **CORS Restrictions:**
+  The backend API must allow CORS from the frontend origin (`http://localhost:5173` or https://referral-program2.netlify.app) with credentials enabled for authentication to work correctly.
+
+* **Authentication:**
+  JWT tokens are stored in HttpOnly cookies; the frontend cannot directly access tokens and relies on cookies for authenticated requests.
+
+* **Protected Routes:**
+  Some routes require users to be logged in; unauthenticated users will be redirected to the signup/login pages.
+
+* **No Offline Support:**
+  The app requires network connectivity to interact with the backend.
+
+* **Error Handling:**
+  Basic error handling is implemented; further enhancements can improve user feedback.
