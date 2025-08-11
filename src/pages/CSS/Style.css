@@ -224,3 +224,55 @@
     border-radius: 25px;
     padding: 10px;
 }
+
+
+.dashboard-wrapper {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.referrals-list-container {
+  margin-top: 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.referrals-list-container h3 {
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.referrals-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.referrals-table thead {
+  background-color: #4caf50;
+  color: white;
+}
+
+.referrals-table th,
+.referrals-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  min-width: 100px;
+}
+
+.referrals-table tbody tr:hover {
+  background-color: #f1f9f1;
+}
+
+.referrals-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
