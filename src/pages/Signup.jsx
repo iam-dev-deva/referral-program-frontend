@@ -41,7 +41,7 @@ const Signup = () => {
     try {
       const data = await registerUser(formData);
       
-      toast.success(data.message || "Signup successful! Please Login", {
+      toast.success("Signup successful! Please Login", {
         position: "top-right",
         autoClose: 1500,
         hideProgressBar: true,
